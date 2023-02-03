@@ -43,31 +43,41 @@
     <nav class="navbar bg-dark" id="navbar">
       <img src="/icons/logo used in header.svg" alt="" id="nav-bulb" />
       <ul id="nav-btn">
-        <div class="nav-each-btn" id="nav-btn1">Dashboard</div>
-        <li class="nav-each-btn">Contents</li>
-        <li class="nav-each-btn">Users</li>
-        <li class="nav-each-btn">Reports</li>
-        <li class="nav-each-btn">Admin</li>
-        <div class="nav-each-btn nav-divs">
-          <img src="/icons/alerts.svg" alt="" class="nav-img" id="alert" />
-        </div>
-        <div class="nav-each-btn nav-divs">
-          <img
-            src="/icons/announcements.svg"
-            alt=""
-            class="nav-img"
-            id="announce"
-          />
-        </div>
-        <div class="nav-each-btn nav-divs">
-          <img
-            src="/images/imageMask-1.png"
-            alt=""
-            class="nav-img"
-            id="account_img"
-          />
-        </div>
+        <a href="" class="nav-each-btn" id="nav-btn1">Dashboard</a>
+        <a href="" class="nav-each-btn">Contents</a>
+        <a href="" class="nav-each-btn">Users</a>
+        <a href="" class="nav-each-btn">Reports</a>
+        <a href="" class="nav-each-btn">Admin</a>
+        <a href="" class="nav-each-btn">
+          <div id="nav-div1">
+            <div class="indicators">
+              <div class="noti_count" role="status">1</div>
+            </div>
+          </div>
+        </a>
+        <a href="" class="nav-each-btn">
+          <div id="nav-div2">
+            <div class="indicators">
+              <div class="noti_count" role="status">1</div>
+            </div>
+          </div>
+        </a>
+        <a href="" class="nav-each-btn">
+          <div id="nav-div3">
+            <div class="indicators">
+              <div class="noti_count" role="status">T</div>
+            </div>
+          </div>
+        </a>
       </ul>
+      <a
+        href="javascript:void(0);"
+        class="nav-each-btn"
+        id="hambur"
+        onclick="myFunction()"
+      >
+        <img src="/icons/hamburger-menu.svg" alt=""
+      /></a>
     </nav>
 
     <div class="summary">
@@ -275,4 +285,14 @@
       </div>
     </footer>
   </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("nav-btn");
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
 </html>

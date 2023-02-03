@@ -38,6 +38,7 @@
 
 #main-heading {
   display: flex;
+  justify-content: none;
   align-items: center;
   max-width: 100%;
   margin-top: 20px;
@@ -57,22 +58,21 @@
 
 #radio {
   display: flex;
+  justify-content: none;
+  align-items: center;
   margin-top: 34px;
   margin-left: 25px;
-  align-items: center;
 }
 
 .each-radio {
   margin-right: 32px;
 }
-
-.each-radio > img {
+.each-radio img {
   width: 20px;
   height: 24px;
   margin-right: 8px;
 }
-
-.each-radio > p {
+.each-radio p {
   display: inline;
 }
 
@@ -147,10 +147,10 @@
 
 #remember {
   display: flex;
+  justify-content: none;
   align-items: center;
 }
-
-#remember > p {
+#remember p {
   margin-top: 13px;
   margin-left: 4px;
   font-weight: 550;
@@ -177,9 +177,9 @@
 
 #footer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 #foot-div1 {
@@ -206,8 +206,7 @@
   justify-content: center;
   align-items: center;
 }
-
-#foot-div2 > img {
+#foot-div2 img {
   margin-right: 16px;
 }
 

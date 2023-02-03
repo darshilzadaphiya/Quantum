@@ -2,7 +2,6 @@
 #body {
   background-color: #eeeeee;
   font-family: "Quicksand";
-  min-height: 900px;
 }
 
 .bold {
@@ -27,6 +26,7 @@
   align-items: center;
   list-style: none;
   margin-bottom: 0px;
+  margin-left: auto;
 }
 
 .nav-each-btn {
@@ -34,11 +34,83 @@
   color: #3fd28b;
   font-family: "Quicksand";
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 60%;
+  bottom: 60%;
+  width: 12px;
+  height: 12px;
+  background-color: #2a7ff3;
+  border-radius: 10px;
+}
+
+.noti_count {
+  font-size: 10px;
+  color: white;
+}
+
+#nav-div1 {
+  height: 22px;
+  width: 22px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-image: url(/icons/alerts.svg);
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+#nav-div1 div {
+  left: 52%;
+  bottom: 60%;
+}
+
+#nav-div2 {
+  height: 22px;
+  width: 22px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-image: url(/icons/announcements.svg);
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+#nav-div2 div {
+  left: 80%;
+  top: -6%;
+}
+
+#nav-div3 {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #3fd28b;
+  border-radius: 50%;
+  background-image: url("/images/imageMask-1.svg");
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+#nav-div3 div {
+  left: 70%;
+  background-color: white;
+}
+#nav-div3 div div {
+  font-size: 8px;
+  color: black;
 }
 
 .nav-img {
   width: 21px;
   height: 24px;
+  z-index: 1;
 }
 
 #nav-btn1 {
@@ -46,11 +118,8 @@
   border-bottom: 2px solid white;
 }
 
-#account_img {
-  width: 32px;
-  height: 32px;
-  border: 1px solid #3fd28b;
-  border-radius: 50px;
+#hambur {
+  display: none;
 }
 
 .select {
@@ -318,4 +387,21 @@
   margin-left: 8px;
   margin-right: 11px;
   font-weight: bolder;
+}
+
+@media (max-width: 1000px) {
+  #hambur {
+    display: block;
+  }
+  #nav-btn {
+    display: none;
+  }
+  .summary {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-card {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
