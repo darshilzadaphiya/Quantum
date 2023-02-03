@@ -1,3 +1,9 @@
+@mixin flexCenter($justify_cont,$align_item){
+  display: flex;
+  justify-content: $justify_cont;
+  align-items: $align_item;
+}
+
 #body {
   background-color: #eeeeee;
   font-family: "Quicksand";
@@ -38,8 +44,7 @@
 }
 
 #main-heading {
-  display: flex;
-  align-items: center;
+  @include flexCenter(none,center );
   max-width: 100%;
   margin-top: 20px;
 }
@@ -57,25 +62,23 @@
 }
 
 #radio {
-  display: flex;
+  @include flexCenter(none,center);
   margin-top: 34px;
   margin-left: 25px;
-  align-items: center;
 }
 
 .each-radio {
   margin-right: 32px;
+  img{
+    width: 20px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  p{
+    display: inline;
+  }
 }
 
-.each-radio > img {
-  width: 20px;
-  height: 24px;
-  margin-right: 8px;
-}
-
-.each-radio > p {
-  display: inline;
-}
 
 #form {
   padding-left: 27px;
@@ -143,14 +146,13 @@
 }
 
 #remember {
-  display: flex;
-  align-items: center;
-}
+  @include flexCenter(none,center );
 
-#remember > p {
-  margin-top: 13px;
-  margin-left: 4px;
-  font-weight: 550;
+  p{
+    margin-top: 13px;
+    margin-left: 4px;
+    font-weight: 550;
+  }
 }
 
 #submit {
@@ -173,10 +175,8 @@
 }
 
 #footer {
-  display: flex;
-  flex-direction: column;
+  @include flexCenter(center,center );
   justify-content: center;
-  align-items: center;
 }
 
 #foot-div1 {
@@ -199,13 +199,11 @@
   height: 100%;
   padding: 10px;
   background-color: #e0e1e1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  @include flexCenter(center,center );
 
-#foot-div2 > img {
-  margin-right: 16px;
+  img{
+    margin-right: 16px;
+  }
 }
 
 .foot-spn {
