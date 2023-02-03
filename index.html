@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style_login/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      @font-face {
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 100 900;
+        src: url("/Quicksand font 1/static/Quicksand-Medium.ttf");
+      }
+      @font-face {
+        font-family: "Quicksand-bold";
+        font-style: normal;
+        font-weight: 100 900;
+        src: url("/Quicksand font 1/static/Quicksand-Bold.ttf");
+      }
+      @font-face {
+        font-family: "Quicksand-semibold";
+        font-style: normal;
+        font-weight: 100 900;
+        src: url("/Quicksand font 1/static/Quicksand-SemiBold.ttf");
+      }
+      @font-face {
+        font-family: "Quicksand-bold";
+        font-style: normal;
+        font-weight: 100 900;
+        src: url("/Quicksand font 1/static/Quicksand-Bold.ttf");
+      }
+    </style>
+  </head>
+  <body id="body">
+    <nav class="navbar bg-dark">
+      <img src="/icons/logo used in header.svg" alt="" id="nav-bulb" />
+    </nav>
+    <div id="border"></div>
+
+    <div class="container" id="main-content">
+      <div id="cont-inner-border"></div>
+      <div id="main-heading">
+        <img src="/icons/back.svg" id="back-icon" alt="" />
+        <p id="heading">Log in with Quantum</p>
+      </div>
+      <div id="radio">
+        <div class="each-radio">
+          <img src="/icons/radio-button-on.svg" alt="" />
+          <p>District</p>
+        </div>
+        <div class="each-radio">
+          <img src="/icons/radio-button-off.svg" alt="" />
+          <p>Independent School</p>
+        </div>
+      </div>
+
+      <div id="form">
+        <form action="">
+          <div class="inputs bold" id="input-div1">
+            <label for="state" class="label">State*</label>
+            <select id="state" name="state" class="select">
+              <option value="gujarat">Gujarat</option>
+            </select>
+          </div>
+          <div class="inputs other-inputs bold">
+            <label for="district" class="label">District*</label>
+            <select id="disctrict" name="district" class="select">
+              <option value="amreli">Amreli</option>
+            </select>
+          </div>
+          <div class="inputs other-inputs bold" id="input-div3">
+            <input
+              type="text"
+              class="input-bottom select"
+              placeholder="Username/Email ID*"
+            />
+            <p class="forgot-password">Forgot Username?</p>
+          </div>
+          <div class="inputs other-inputs bold">
+            <input
+              type="password"
+              class="input-bottom"
+              placeholder="Password*"
+              id="input-div4"
+            />
+            <p class="forgot-password">Forgot Password?</p>
+          </div>
+          <div id="remember">
+            <img src="/icons/checkbox-checked.svg" alt="" />
+            <p class="bold">Remember Me</p>
+          </div>
+
+          <div id="submit">
+            <button type="submit" id="sub-button" class="bold">Log in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div id="foot-div1">
+        <a href="" class="foot-button">About</a>
+        <span class="sla">|</span>
+        <a href="" class="foot-button">Contant Us</a>
+      </div>
+      <div id="foot-div2">
+        <img src="/icons/logo used in footer.svg" alt="" />
+        <span class="sla">|</span>
+        <span class="foot-spn" id="spn1">Copyright &#169; 2020-2021</span>
+        <span class="foot-spn" id="spn2"> Zeus Systems Pvt. Ltd.</span>
+        <span class="foot-spn"> All rights reserved</span>
+      </div>
+    </footer>
+  </body>
+</html>
