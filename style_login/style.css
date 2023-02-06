@@ -66,14 +66,19 @@
 
 .each-radio {
   margin-right: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.each-radio img {
+.each-radio input {
   width: 20px;
   height: 24px;
   margin-right: 8px;
+  accent-color: #1f7a54;
 }
 .each-radio p {
   display: inline;
+  margin-bottom: 0px;
 }
 
 #form {
@@ -120,7 +125,10 @@
 }
 
 .forgot-password {
-  text-align: end;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-decoration: none;
   text-transform: uppercase;
   color: #1f7a54;
   font-weight: 500;
@@ -150,9 +158,15 @@
   justify-content: none;
   align-items: center;
 }
+#remember input {
+  width: 18px;
+  height: 24px;
+  margin-right: 3px;
+  accent-color: #1f7a54;
+}
 #remember p {
-  margin-top: 13px;
   margin-left: 4px;
+  margin-bottom: 0px;
   font-weight: 550;
 }
 
@@ -180,6 +194,7 @@
   justify-content: center;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 #foot-div1 {

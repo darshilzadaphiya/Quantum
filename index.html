@@ -53,11 +53,11 @@
       </div>
       <div id="radio">
         <div class="each-radio">
-          <img src="/icons/radio-button-on.svg" alt="" />
-          <p>District</p>
+          <input type="radio" value="District" name="radios" />
+          <p id="dist">District</p>
         </div>
         <div class="each-radio">
-          <img src="/icons/radio-button-off.svg" alt="" />
+          <input type="radio" value="Independent School" name="radios" />
           <p>Independent School</p>
         </div>
       </div>
@@ -79,10 +79,11 @@
           <div class="inputs other-inputs bold" id="input-div3">
             <input
               type="text"
-              class="input-bottom select"
+              class="input-bottom"
               placeholder="Username/Email ID*"
             />
-            <p class="forgot-password">Forgot Username?</p>
+            <a href="" class="forgot-password">Forgot Username?</a>
+            <!-- <p class="forgot-password"></p> -->
           </div>
           <div class="inputs other-inputs bold">
             <input
@@ -91,10 +92,11 @@
               placeholder="Password*"
               id="input-div4"
             />
-            <p class="forgot-password">Forgot Password?</p>
+            <a href="" class="forgot-password">Forgot Username?</a>
           </div>
           <div id="remember">
-            <img src="/icons/checkbox-checked.svg" alt="" />
+            <!-- <img src="/icons/checkbox-checked.svg" alt="" /> -->
+            <input type="checkbox" value="Remember" name="checked" />
             <p class="bold">Remember Me</p>
           </div>
 

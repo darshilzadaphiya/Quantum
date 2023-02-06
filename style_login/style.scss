@@ -1,4 +1,4 @@
-@mixin flexCenter($justify_cont,$align_item){
+@mixin flexCenter($justify_cont, $align_item) {
   display: flex;
   justify-content: $justify_cont;
   align-items: $align_item;
@@ -44,7 +44,7 @@
 }
 
 #main-heading {
-  @include flexCenter(none,center );
+  @include flexCenter(none, center);
   max-width: 100%;
   margin-top: 20px;
 }
@@ -62,23 +62,25 @@
 }
 
 #radio {
-  @include flexCenter(none,center);
+  @include flexCenter(none, center);
   margin-top: 34px;
   margin-left: 25px;
 }
 
 .each-radio {
   margin-right: 32px;
-  img{
+  @include flexCenter(center, center);
+  input {
     width: 20px;
     height: 24px;
     margin-right: 8px;
+    accent-color: #1f7a54;
   }
-  p{
+  p {
     display: inline;
+    margin-bottom: 0px;
   }
 }
-
 
 #form {
   padding-left: 27px;
@@ -122,7 +124,8 @@
 }
 
 .forgot-password {
-  text-align: end;
+  @include flexCenter(end, center);
+  text-decoration: none;
   text-transform: uppercase;
   color: #1f7a54;
   font-weight: 500;
@@ -146,11 +149,18 @@
 }
 
 #remember {
-  @include flexCenter(none,center );
+  @include flexCenter(none, center);
 
-  p{
-    margin-top: 13px;
+  input {
+    width: 18px;
+    height: 24px;
+    margin-right: 3px;
+    accent-color: #1f7a54;
+  }
+
+  p {
     margin-left: 4px;
+    margin-bottom: 0px;
     font-weight: 550;
   }
 }
@@ -175,8 +185,9 @@
 }
 
 #footer {
-  @include flexCenter(center,center );
+  @include flexCenter(center, center);
   justify-content: center;
+  flex-direction: column;
 }
 
 #foot-div1 {
@@ -199,9 +210,9 @@
   height: 100%;
   padding: 10px;
   background-color: #e0e1e1;
-  @include flexCenter(center,center );
+  @include flexCenter(center, center);
 
-  img{
+  img {
     margin-right: 16px;
   }
 }
