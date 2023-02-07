@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("../Quicksand font 1/static/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: "Quicksand-bold";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("../Quicksand font 1/static/Quicksand-Bold.ttf");
+}
+@font-face {
+  font-family: "Quicksand-semibold";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("../Quicksand font 1/static/Quicksand-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Quicksand-bold";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("../Quicksand font 1/static/Quicksand-Bold.ttf");
+}
+
 @mixin flexCenter($justify_cont, $align_item) {
   display: flex;
   justify-content: $justify_cont;
@@ -9,12 +34,16 @@
   font-family: "Quicksand";
 }
 
+.cp {
+  cursor: pointer;
+}
+
 .bold {
   font-family: "Quicksand-bold";
 }
 
 .navbar {
-  background-image: url(/header\ pattern\ image.png);
+  background-image: url(../header\ pattern\ image.png);
 }
 
 #nav-bulb {
@@ -79,6 +108,8 @@
   p {
     display: inline;
     margin-bottom: 0px;
+    font-family: "Quicksand-bold";
+    color: #666363;
   }
 }
 
@@ -110,12 +141,12 @@
   border-top: none;
   padding-bottom: 3px;
   appearance: none;
-  background-image: url("/icons/arrow-down.svg");
+  background-image: url("../icons/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: 100% center;
 }
 
-.other-inputs {
+.dist-user-pass {
   margin-top: 36px;
 }
 
@@ -123,9 +154,11 @@
   margin-top: 55px;
 }
 
-.forgot-password {
-  @include flexCenter(end, center);
+.forgot-cred {
+  @include flexCenter(none, center);
   text-decoration: none;
+  margin-left: auto;
+  width: fit-content;
   text-transform: uppercase;
   color: #1f7a54;
   font-weight: 500;
@@ -143,7 +176,7 @@
 
 #input-div4 {
   appearance: none;
-  background-image: url("/icons/preview.svg");
+  background-image: url("../icons/preview.svg");
   background-repeat: no-repeat;
   background-position: 100% center;
 }
@@ -162,6 +195,7 @@
     margin-left: 4px;
     margin-bottom: 0px;
     font-weight: 550;
+    color: #666363;
   }
 }
 
@@ -176,9 +210,13 @@
 #sub-button {
   height: 40px;
   width: 216px;
+  padding-top: 8px;
+  text-decoration: none;
+  color: #323232;
   background-color: #3fd28b;
   border: none;
   border-radius: 2px;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 550;
   box-shadow: 0px 5px 5px #dfdede;

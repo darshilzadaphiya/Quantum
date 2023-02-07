@@ -12,32 +12,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <style>
-      @font-face {
-        font-family: "Quicksand";
-        font-style: normal;
-        font-weight: 100 900;
-        src: url("/Quicksand font 1/static/Quicksand-Medium.ttf");
-      }
-      @font-face {
-        font-family: "Quicksand-bold";
-        font-style: normal;
-        font-weight: 100 900;
-        src: url("/Quicksand font 1/static/Quicksand-Bold.ttf");
-      }
-      @font-face {
-        font-family: "Quicksand-semibold";
-        font-style: normal;
-        font-weight: 100 900;
-        src: url("/Quicksand font 1/static/Quicksand-SemiBold.ttf");
-      }
-      @font-face {
-        font-family: "Quicksand-bold";
-        font-style: normal;
-        font-weight: 100 900;
-        src: url("/Quicksand font 1/static/Quicksand-Bold.ttf");
-      }
-    </style>
+    <style></style>
   </head>
   <body id="body">
     <nav class="navbar bg-dark">
@@ -53,12 +28,17 @@
       </div>
       <div id="radio">
         <div class="each-radio">
-          <input type="radio" value="District" name="radios" />
-          <p id="dist">District</p>
+          <input type="radio" value="District" name="radios" id="district" />
+          <label for="district"><p id="dist" class="cp">District</p></label>
         </div>
         <div class="each-radio">
-          <input type="radio" value="Independent School" name="radios" />
-          <p>Independent School</p>
+          <input
+            type="radio"
+            value="Independent School"
+            name="radios"
+            id="ind-sch"
+          />
+          <label for="ind-sch"><p class="cp">Independent School</p></label>
         </div>
       </div>
 
@@ -70,38 +50,49 @@
               <option value="gujarat">Gujarat</option>
             </select>
           </div>
-          <div class="inputs other-inputs bold">
+          <div class="inputs dist-user-pass bold">
             <label for="district" class="label">District*</label>
             <select id="disctrict" name="district" class="select">
               <option value="amreli">Amreli</option>
             </select>
           </div>
-          <div class="inputs other-inputs bold" id="input-div3">
+          <div class="inputs dist-user-pass bold" id="input-div3">
             <input
-              type="text"
+              type="email"
               class="input-bottom"
               placeholder="Username/Email ID*"
             />
-            <a href="" class="forgot-password">Forgot Username?</a>
-            <!-- <p class="forgot-password"></p> -->
+            <a href="" class="forgot-cred">Forgot Username?</a>
           </div>
-          <div class="inputs other-inputs bold">
+          <div class="inputs dist-user-pass bold">
             <input
               type="password"
               class="input-bottom"
               placeholder="Password*"
               id="input-div4"
             />
-            <a href="" class="forgot-password">Forgot Username?</a>
+            <a href="" class="forgot-cred">Forgot Password?</a>
           </div>
           <div id="remember">
-            <!-- <img src="/icons/checkbox-checked.svg" alt="" /> -->
-            <input type="checkbox" value="Remember" name="checked" />
-            <p class="bold">Remember Me</p>
+            <input
+              type="checkbox"
+              value="Remember"
+              name="checked"
+              id="checked"
+            />
+            <label for="checked"><p class="bold cp">Remember Me</p></label>
           </div>
 
           <div id="submit">
-            <button type="submit" id="sub-button" class="bold">Log in</button>
+            <a
+              href="http://127.0.0.1:5500/index_dashboard.html"
+              id="sub-button"
+              class="bold"
+            >
+              <!-- <button type="submit" id="sub-button" class="bold"> -->
+              Log in
+              <!-- </button> -->
+            </a>
           </div>
         </form>
       </div>

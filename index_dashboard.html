@@ -12,37 +12,12 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <style>
-      @font-face {
-        font-family: "Quicksand";
-        font-style: normal;
-        font-weight: 100 900;
-        src: url("./Quicksand font 1/static/Quicksand-Medium.ttf");
-      }
-      @font-face {
-        font-family: "Quicksand-bold";
-        font-style: normal;
-        font-weight: 100 900;
-        src: url("./Quicksand font 1/static/Quicksand-Bold.ttf");
-      }
-      @font-face {
-        font-family: "Quicksand-semibold";
-        font-style: normal;
-        font-weight: 100 900;
-        src: url("./Quicksand font 1/static/Quicksand-SemiBold.ttf");
-      }
-      @font-face {
-        font-family: "Quicksand-bold";
-        font-style: normal;
-        font-weight: 100 900;
-        src: url("./Quicksand font 1/static/Quicksand-Bold.ttf");
-      }
-    </style>
+    <style></style>
   </head>
   <body id="body">
     <nav class="navbar bg-dark" id="navbar">
       <img src="./icons/logo used in header.svg" alt="" id="nav-bulb" />
-      <ul id="nav-btn">
+      <ul id="nav-btn" class="hidden">
         <a href="" class="nav-each-btn" id="nav-btn1">Dashboard</a>
         <a href="" class="nav-each-btn">Contents</a>
         <a href="" class="nav-each-btn">Users</a>
@@ -287,6 +262,7 @@
   </body>
   <script>
     function myFunction() {
+      // var x = document.getElementsByClassName("hidden");
       var x = document.getElementById("nav-btn");
       if (x.style.display === "none") {
         x.style.display = "flex";
