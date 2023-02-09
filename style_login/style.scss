@@ -16,12 +16,6 @@
   font-weight: 100 900;
   src: url("../Quicksand font 1/static/Quicksand-SemiBold.ttf");
 }
-@font-face {
-  font-family: "Quicksand-bold";
-  font-style: normal;
-  font-weight: 100 900;
-  src: url("../Quicksand font 1/static/Quicksand-Bold.ttf");
-}
 
 @mixin flexCenter($justify_cont, $align_item) {
   display: flex;

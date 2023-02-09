@@ -16,12 +16,6 @@
   font-weight: 100 900;
   src: url("../Quicksand font 1/static/Quicksand-SemiBold.ttf");
 }
-@font-face {
-  font-family: "Quicksand-bold";
-  font-style: normal;
-  font-weight: 100 900;
-  src: url("../Quicksand font 1/static/Quicksand-Bold.ttf");
-}
 #body {
   background-color: #eeeeee;
   font-family: "Quicksand";
@@ -160,7 +154,6 @@
   align-items: center;
   text-decoration: none;
   margin-left: auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;

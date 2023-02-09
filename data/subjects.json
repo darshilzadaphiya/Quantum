@@ -1,0 +1,46 @@
+[
+  {
+    "thumbnailURL": "../images/imageMask-1.svg",
+    "title": "Acceleration",
+    "subject": "Physics",
+    "grade": 7,
+    "sub_details": {
+      "units": 4,
+      "lessons": 18,
+      "topics": 24
+    }
+  },
+  {
+    "thumbnailURL": "../images/imageMask-2.svg",
+    "title": "Displacement,Velocity and Speed",
+    "subject": "Physics 2",
+    "grade": 6,
+    "sub_details": {
+      "units": 2,
+      "lessons": 15,
+      "topics": 20
+    }
+  },
+  {
+    "thumbnailURL": "../images/imageMask-3.svg",
+    "title": "Introduction to Biology: Microorganisms and how they ...",
+    "subject": "Biology",
+    "grade": 4,
+    "sub_details": {
+      "units": 5,
+      "lessons": 16,
+      "topics": 22
+    }
+  },
+  {
+    "thumbnailURL": "../images/imageMask.svg",
+    "title": "Introduction to Hign School Mathematics",
+    "subject": "Mathematics",
+    "grade": 8,
+    "sub_details": {
+      "units": null,
+      "lessons": null,
+      "topics": null
+    }
+  }
+]
