@@ -17,12 +17,14 @@
   <body id="body">
     <nav class="navbar bg-dark" id="navbar">
       <img src="./icons/logo used in header.svg" alt="" id="nav-bulb" />
-      <ul id="nav-btn" class="hidden">
-        <a href="" class="nav-each-btn" id="nav-btn1">Dashboard</a>
-        <a href="" class="nav-each-btn">Contents</a>
-        <a href="" class="nav-each-btn">Users</a>
-        <a href="" class="nav-each-btn">Reports</a>
-        <a href="" class="nav-each-btn">Admin</a>
+      <ul id="nav-btn">
+        <div id="nav-compo">
+          <a href="" class="nav-each-btn" id="nav-btn1">Dashboard</a>
+          <a href="" class="nav-each-btn">Contents</a>
+          <a href="" class="nav-each-btn">Users</a>
+          <a href="" class="nav-each-btn">Reports</a>
+          <a href="" class="nav-each-btn">Admin</a>
+        </div>
         <a href="" class="nav-each-btn">
           <div id="nav-div1">
             <div class="indicators">
@@ -45,33 +47,226 @@
           </div>
         </a>
       </ul>
-      <a href="javascript:void(0);" class="nav-each-btn" id="hambur">
+      <a
+        href="javascript:void(0);"
+        class="nav-each-btn"
+        id="hambur-img"
+        onclick="responsive()"
+      >
         <img src="./icons/hamburger-menu.svg" alt=""
       /></a>
     </nav>
+    <div>
+      <div class="overlap">
+        <ul class="hambur-dropdown-compo">
+          <a href=""><li>Dashboard</li></a>
+          <a href=""><li>Content</li></a>
+          <a href=""><li>Users</li></a>
+          <a href=""><li>Reports</li></a>
+          <a href=""><li>Admin</li></a>
+        </ul>
+      </div>
 
-    <div class="summary">
-      <div id="course" class="cour-class">
-        <img src="./icons/courses.svg" alt="" class="summ-img" />
-        <p class="num">4</p>
-        <p class="summ-desc">Courses</p>
+      <!-- Notification dropdown -->
+      <div class="overlap notifications">
+        <div>
+          <ul class="noti-dropdown">
+            <a href=""
+              ><div class="noti-details">
+                <div class="det-and-button">
+                  <p class="detail">
+                    License for Introduction to Algebra has been assigned to
+                    your school
+                  </p>
+                  <p class="noti-det-icon">&#8861;</p>
+                </div>
+                <p class="date-time">15-Sep-2018 at 07:21 pm</p>
+              </div>
+            </a>
+            <a href=""
+              ><div class="noti-details noti-readed">
+                <div class="det-and-button">
+                  <p class="detail">
+                    Lesson 3 Practice Worksheet overdue for Amy Santiago
+                  </p>
+                  <p class="noti-det-icon noti-checked">
+                    <img src="./icons/checked-circle.png" alt="" />
+                  </p>
+                </div>
+                <p class="noti-course">
+                  Course: <span> Advanced Mathematics</span>
+                </p>
+                <p class="date-time">15-Sep-2018 at 05:21 pm</p>
+              </div>
+            </a>
+            <a href=""
+              ><div class="noti-details">
+                <div class="det-and-button">
+                  <p class="detail">23 new students created</p>
+                  <p class="noti-det-icon">&#8861;</p>
+                </div>
+                <p class="date-time">14-Sep-2018 at 01:21 pm</p>
+              </div>
+            </a>
+            <a href=""
+              ><div class="noti-details">
+                <div class="det-and-button">
+                  <p class="detail">15 submissions ready for evaluation</p>
+                  <p class="noti-det-icon">&#8861;</p>
+                </div>
+                <p class="noti-course">
+                  Course: <span> Basics of Algebra</span>
+                </p>
+                <p class="date-time">13-Sep-2018 at 01:15 pm</p>
+              </div>
+            </a>
+            <a href=""
+              ><div class="noti-details">
+                <div class="det-and-button">
+                  <p class="detail">
+                    License for Basic Concepts in Geometry has been assigned to
+                    your... school
+                  </p>
+                  <p class="noti-det-icon">&#8861;</p>
+                </div>
+                <p class="date-time">15-Sep-2018 at 07:21 pm</p>
+              </div>
+            </a>
+            <a href=""
+              ><div class="noti-details noti-readed">
+                <div class="det-and-button">
+                  <p class="detail">
+                    Lesson 3 Practice Worksheet overdue for Sam Diego
+                  </p>
+                  <p class="noti-det-icon">
+                    <img src="./icons/checked-circle.png" alt="" />
+                  </p>
+                </div>
+                <p class="noti-course">
+                  Course: <span> Advanced Mathematics</span>
+                </p>
+                <p class="date-time">15-Sep-2018 at 07:21 pm</p>
+              </div>
+            </a>
+          </ul>
+        </div>
+        <button>Show All</button>
       </div>
-      <div id="class" class="cour-class">
-        <img src="./icons/classes.svg" alt="" class="summ-img" />
-        <p class="num">4</p>
-        <p class="summ-desc">Classes</p>
+
+      <!-- Announcements dropdown -->
+      <div class="overlap announcement">
+        <div>
+          <ul class="noti-dropdown">
+            <a href=""
+              ><div class="noti-details noti-readed">
+                <div class="det-and-button">
+                  <p class="noti-course">PA: <span> Wilson Kumar</span></p>
+                  <p class="noti-det-icon noti-checked">
+                    <img src="./icons/checked-circle.png" alt="" />
+                  </p>
+                </div>
+                <p class="detail">No classes will be held on 21st Nov</p>
+                <div class="attach-date-time">
+                  <p>
+                    <img src="./icons/attachment icon.png" alt="" /> 2 files are
+                    attached
+                  </p>
+                  <p class="date-time">15-Sep-2018 at 07:21 pm</p>
+                </div>
+              </div>
+            </a>
+            <a href=""
+              ><div class="noti-details">
+                <div class="det-and-button">
+                  <p class="noti-course">PA: <span>Samson White</span></p>
+                  <p class="noti-det-icon">&#8861;</p>
+                </div>
+                <p class="detail">
+                  Guest lecture on Geometry on 20th September
+                </p>
+                <div class="attach-date-time">
+                  <p>
+                    <img src="./icons/attachment icon.png" alt="" /> 2 files are
+                    attached
+                  </p>
+                  <p class="date-time">15-Sep-2018 at 07:21 pm</p>
+                </div>
+              </div>
+            </a>
+            <a href=""
+              ><div class="noti-details noti-readed">
+                <div class="det-and-button">
+                  <p class="noti-course">PA: <span>Wilson Kumar</span></p>
+                  <p class="noti-det-icon noti-checked">
+                    <img src="./icons/checked-circle.png" alt="" />
+                  </p>
+                </div>
+                <p class="detail">
+                  Additional course materials available on request
+                </p>
+
+                <p class="noti-course">Course: <span>Mathematics 101</span></p>
+                <p class="date-time">15-Sep-2018 at 05:21 pm</p>
+              </div>
+            </a>
+            <a href=""
+              ><div class="noti-details">
+                <div class="det-and-button">
+                  <p class="noti-course">PA: <span> Wilson Kumar</span></p>
+                  <p class="noti-det-icon">&#8861;</p>
+                </div>
+                <p class="detail">No classes will be held on 25th Dec</p>
+                <p class="date-time">15-Sep-2018 at 07:21 pm</p>
+              </div>
+            </a>
+            <a href=""
+              ><div class="noti-details">
+                <div class="det-and-button">
+                  <p class="noti-course">PA: <span> Wilson Kumar</span></p>
+                  <p class="noti-det-icon">&#8861;</p>
+                </div>
+                <p class="detail">
+                  Additional course materials available on request
+                </p>
+                <p class="noti-course">Course: <span>Mathematics 101</span></p>
+                <p class="date-time">15-Sep-2018 at 07:21 pm</p>
+              </div>
+            </a>
+          </ul>
+        </div>
+        <div class="announce-btns">
+          <button>Show All</button>
+          <span>|</span>
+          <button>Creat new</button>
+        </div>
       </div>
-      <div id="values">
-        <p>Showing 4 of 4 courses</p>
-      </div>
-      <div id="sort">
-        <form action="" class="bold">
-          <label for="Courname" id="label">Sort By:</label>
-          <select id="Courname" name="Courname" class="select">
-            <option value="Course">Course Name</option>
-          </select>
-          <img src="./icons/sort.svg" alt="" id="sort-img" />
-        </form>
+
+      <!-- Summary starts here -->
+      <div id="inner-body">
+        <div class="summary">
+          <div id="course" class="cour-class">
+            <img src="./icons/courses.svg" alt="" class="summ-img" />
+            <p class="num">4</p>
+            <p class="summ-desc">Courses</p>
+          </div>
+          <div id="class" class="cour-class">
+            <img src="./icons/classes.svg" alt="" class="summ-img" />
+            <p class="num">4</p>
+            <p class="summ-desc">Classes</p>
+          </div>
+          <div id="values">
+            <p>Showing 4 of 4 courses</p>
+          </div>
+          <div id="sort">
+            <form action="" class="bold">
+              <label for="Courname" id="label">Sort By:</label>
+              <select id="Courname" name="Courname" class="select">
+                <option value="Course">Course Name</option>
+              </select>
+              <img src="./icons/sort.svg" alt="" id="sort-img" />
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -94,4 +289,5 @@
     </footer>
   </body>
   <script type="module" src="./Scripts/script.js"></script>
+  <script src="./typescript/dashboard.js"></script>
 </html>
