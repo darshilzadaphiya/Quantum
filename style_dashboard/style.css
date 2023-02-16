@@ -413,6 +413,7 @@
 .overlap {
   position: absolute;
   text-align: initial;
+  height: 100%;
   width: 280px;
   top: 54px;
   right: 10px;
@@ -455,9 +456,9 @@
 }
 
 .notifications {
-  display: none;
-  right: 182px;
-  max-height: 600px;
+  right: 140px;
+  max-height: 0;
+  transition: max-height 1s;
   width: 320px;
   overflow-y: scroll;
   background-color: #ffffff;
@@ -477,8 +478,9 @@
 }
 
 .announcement {
-  right: 123px;
-  max-height: 600px;
+  right: 84px;
+  max-height: 0;
+  transition: max-height 1s;
   width: 320px;
   overflow-y: scroll;
   background-color: #ffffff;
@@ -597,16 +599,33 @@
   width: 4px;
 }
 
+.show-dropdown {
+  max-height: 600px;
+}
+
+.show-dropdown2 {
+  max-height: 600px;
+}
+
 @media (max-width: 1000px) {
+  .notifications {
+    right: 182px;
+  }
+  .announcement {
+    right: 123px;
+  }
   #hambur-img {
     display: block;
   }
   .hambur-dropdown-compo {
-    display: none;
-  }
-  .responsive {
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    max-height: 0;
+    transition: max-height 1s;
+  }
+  .responsive {
+    max-height: 100%;
   }
   #nav-div3 {
     margin-right: 40px;

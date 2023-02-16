@@ -424,6 +424,7 @@ $noti_badge_blue: #2a7ff3;
 .overlap {
   position: absolute;
   text-align: initial;
+  height: 100%;
   width: 280px;
   top: 54px;
   right: 10px;
@@ -469,9 +470,9 @@ $noti_badge_blue: #2a7ff3;
 
 //Dropdown for notification and announcement
 .notifications {
-  display: none;
-  right: 182px;
-  max-height: 600px;
+  right: 140px;
+  max-height: 0;
+  transition: max-height 1s;
   width: 320px;
   overflow-y: scroll;
   background-color: #ffffff;
@@ -492,8 +493,9 @@ $noti_badge_blue: #2a7ff3;
 }
 
 .announcement {
-  right: 123px;
-  max-height: 600px;
+  right: 84px;
+  max-height: 0;
+  transition: max-height 1s;
   width: 320px;
   overflow-y: scroll;
   background-color: #ffffff;
@@ -618,21 +620,41 @@ $noti_badge_blue: #2a7ff3;
   }
 }
 
+.show-dropdown {
+  max-height: 600px;
+}
+
+.show-dropdown2 {
+  max-height: 600px;
+}
+
 // Media querries
 
 @media (max-width: 1000px) {
+  .notifications {
+    right: 182px;
+  }
+
+  .announcement {
+    right: 123px;
+  }
+
   #hambur-img {
     display: block;
     // position: absolute;
   }
 
   .hambur-dropdown-compo {
-    display: none;
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 0;
+    transition: max-height 1s;
   }
 
   .responsive {
-    display: flex;
-    flex-direction: column;
+    max-height: 100%;
   }
 
   #nav-div3 {
